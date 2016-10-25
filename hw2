@@ -1,0 +1,29 @@
+//Step 1: List of arrays
+array1 = ["1234 ", "5674 ", "6758 ", "4827 ", "2934 ", "3023 ", "7432 ", "5628 "];
+//list of street numbers
+array2 = ["Johnson Street, ","Henderson Ave, ", "Old Oak Street, ", "Hernando Blvd, ","Blossom Circle, ", "German Street, ", "Havanna Blvd, ", "Spring Street, "];
+//list of street names
+array3 = ["Charlotte ", "Atlanta ", "Germantown ", "Memphis ", "Greenbay ", "Juniper ", "St. Cloud ", "Stars Hollow "];
+//list of cities
+array4 = ["NY, ", "NC, ", "GA, ", "VA, ", "SC, ", "MS, ", "MN, ", "TX, "];
+//list of states
+array5 = ["30305", "30601", "27516", "24081", "30318", "32476", "25436", "79081"];
+//list of zip codes
+
+//Step 2: List of functions to generate random values
+var a = Math.floor((Math.random()*array1.length));
+//The function multiplies the number of elements within an array (array.length) by a random fraction (Math.random)
+//The function then rounds the product to the nearest whole number in order to select an element within the array
+//Array elements are attributed a value between 0 and 7 based on their position in the array
+var b = Math.floor((Math.random()*array2.length));
+//select random street name
+var c = Math.floor((Math.random()*array3.length));
+//select random city
+var d = Math.floor((Math.random()*array4.length));
+//select random state
+var e = Math.floor((Math.random()*array5.length));
+//select random zip code
+
+//Step 3: Output
+console.log(array1[a],array2[b],array3[c],array4[d],array5[e]);
+//This function generates an address based on the random variables created in step 2.
